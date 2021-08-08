@@ -1,2 +1,2 @@
-# Data_centric_AI
+# Data_centric_AI_Contest
 Data Centric AI
