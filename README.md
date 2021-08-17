@@ -13,9 +13,9 @@ We describe 4 innovative approaches towards Data Centric AI ( MNIST-ROMAN )
          - Faster convergence with training data 
          - Reduces validation loss and emprical results suggest improved accuracy with Test Set
 
-3.  Diagonal Resets could better distort HandWritten Images over Random Erasing 
+3.  Distort HandWritten Images with Diagonal Erasing 
 
 4.  Emprical results with 
-	- Augment all images with its Flip  ( Contrasting Distribution )
+	- Contrasting Distribution          ( Augment every image with a Flip )
 	- Mixup 			    ( https://arxiv.org/abs/1710.09412 )
 
