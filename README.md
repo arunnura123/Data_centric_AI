@@ -20,7 +20,7 @@ Cropped Image
 
          - Group pixels of similar intensity to same value
          - Faster convergence with training data 
-         - Reduces validation loss and emorical results suggest improved accuracy with Test Set
+         - Reduces validation loss and emprical results suggest improved accuracy with Test Set
 
 3.  Diagonal Resets could better distort HandWritten Images over Random Erasing 
 
