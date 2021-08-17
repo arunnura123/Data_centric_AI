@@ -13,10 +13,7 @@ Cropped Image
 
 Original Image
 
-
 ![ab9fb784-ce5d-11eb-b317-38f9d35ea60f](https://user-images.githubusercontent.com/4832280/129689863-64dd57f1-2c53-4d0f-82a6-99d551fe6960.png)
-
-
 
 2.  With Validation dataset unmodified , Discretization of Augmented training dataset improves decision boundary
 
