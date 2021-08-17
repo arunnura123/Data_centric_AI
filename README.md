@@ -7,8 +7,10 @@ Data Centric AI ( MNIST-ROMAN )
         - Achieves similar accuracy as that of traditional approach 
 
 2.  With Validation dataset unmodified , Discretization of Augmented training dataset improves decision boundary
+
          - Group pixels of similar intensity to same value
-         - Faster convergence with training data , reduces validation loss and improves accuracy with Test Set
+         - Faster convergence with training data 
+         - Reduces validation loss and emorical results suggest improved accuracy with Test Set
 
 3.  Diagonal resets provide better image distoration over random erasing
 
