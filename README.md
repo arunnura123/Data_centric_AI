@@ -1,5 +1,5 @@
 # Data_centric_AI_Contest ( Innovative Submissions Track ) 
-Data Centric AI ( MNIST-ROMAN )
+We describe 4 innovative approaches towards Data Centric AI ( MNIST-ROMAN )
 
 1.  "Crop" image first  and then "Augment" provides similar accuracy as "Augmenting" Images first and then "cropping" 
 	- Compresses image size by 4-16x , Facilitates Faster Upload and reduces Colab Workspace
