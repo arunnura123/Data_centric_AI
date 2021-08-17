@@ -12,7 +12,7 @@ Data Centric AI ( MNIST-ROMAN )
          - Faster convergence with training data 
          - Reduces validation loss and emorical results suggest improved accuracy with Test Set
 
-3.  Diagonal resets provide better image distoration over random erasing
+3.  Diagonal Resets could better distort HandWritten Images over Random Erasing 
 
 4.  Emprical results with 
 	- Augment all images with its Flip  ( Contrasting Distribution )
