@@ -3,7 +3,7 @@ Data Centric AI ( MNIST-ROMAN )
 
 1.  "Crop" image first  and then "Augment" provides similar accuracy as "Augmenting" Images first and then "cropping" 
 	- Compresses image size by 4x , Facilitates Faster Upload and reduces Colab Workspace
-        - Realize Faster image augmentation and DataSet Search easier
+        - Realize Faster image augmentation and Simplifies DataSet Search
         - Achieves similar accuracy to traditional approach 
 
 2.  With Validation dataset unmodified , Discretization of Augmented training dataset improves decision boundary
