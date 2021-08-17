@@ -6,15 +6,17 @@ Data Centric AI ( MNIST-ROMAN )
         - Realize Faster image augmentation and Simplifies DataSet Search
         - Achieves similar accuracy as that of traditional approach 
 
+Cropped Image 
+
+
+![ab9fb784-ce5d-11eb-b317-38f9d35ea60f](https://user-images.githubusercontent.com/4832280/129690470-cebdaf92-3546-4754-9051-3f1cde973a03.png)
+
 Original Image
 
 
 ![ab9fb784-ce5d-11eb-b317-38f9d35ea60f](https://user-images.githubusercontent.com/4832280/129689863-64dd57f1-2c53-4d0f-82a6-99d551fe6960.png)
 
-Cropped Image 
 
-
-![ab9fb784-ce5d-11eb-b317-38f9d35ea60f](https://user-images.githubusercontent.com/4832280/129690470-cebdaf92-3546-4754-9051-3f1cde973a03.png)
 
 2.  With Validation dataset unmodified , Discretization of Augmented training dataset improves decision boundary
 
