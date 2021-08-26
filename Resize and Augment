@@ -1,1 +1,39 @@
+import cv2
+import os
+import random
+import numpy as np
+import math
 
+import glob
+
+m = ["i" , "ii" , "iii" , "iv", "v", "vi" , "vii", "viii" , "ix" ,"x" ]
+
+folder_name = "your folder of Training Dataset"
+for i in range(len(m)):
+    print(folder_name + m[i])
+    im1 = glob.glob(folder_name + m[i] + "/*.png")
+    for f in range(len(im1)):
+        image1 = cv2.imread(im1[f], cv2.IMREAD_GRAYSCALE)
+        
+        # 1. Resize image first and Augment 
+        
+        im_r1 = cv2.resize(image1, (32,32))
+        
+        a =  int(random.randint(0,50))
+        
+        # 2. Binning , Group similar pixels
+        
+        a = a + (a%2)
+        
+        b = int(random.randint(0,1))
+        
+        # 3. Increase ligher intensity and Decrease Darker intensity
+        
+        im_r1[im_r1 < 127] += a
+        im_r1[im_r1 > 127] -= a
+        
+        # 4. Image Flip with probablity of 50%
+        
+        if b == 1:
+            im_r1 = ~im_r1
+        cv2.imwrite(os.path.join(im1[f]), im_r1)
