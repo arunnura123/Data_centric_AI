@@ -13,8 +13,9 @@ We describe interesting approaches towards Data Centric AI contest ( MNIST-ROMAN
       
          - Group pixels of similar intensity to same value ( Group by a factor of 2 or 3 works well to several of training datasets and
            reduces variance . However a large Group factor increases bias )
-         - Random shift ( increasing low intensity pixels while decrease high intensity pixels with random value appears to be a useful way to modify data distribution
-           in several cases than scaling image by a constant factor that converts high intensity to low intensity because of overflow)
+         - Random shift ( increasing low intensity pixels while decrease high intensity pixels with random value appears to be a useful 
+           way to modify data distribution in several cases than scaling image by a constant factor that converts high intensity to low 
+	   intensity because of overflow)
          - Diagonal resets appear to better distort handwritten text over random erasing
          
          
