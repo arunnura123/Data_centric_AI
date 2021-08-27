@@ -11,9 +11,10 @@ We describe interesting approaches towards Data Centric AI contest ( MNIST-ROMAN
 
 2.  We also observe the follow Approaches to help tweak training data distribution and improving validation accuracy  
       
-         - Group pixels of similar intensity to same value ( Group by a factor of 2 or 3 reduces variance . However a large Group factor increases bias )
+         - Group pixels of similar intensity to same value ( Group by a factor of 2 or 3 reduces variance . 
+           However a large Group factor increases bias )
          - Random shift ( increasing low intensity pixels while decrease high intensity pixels appears better than scaling image by a constant factor )
-         - Diagonal resets appear to better distort handwritten
+         - Diagonal resets appear to better distort handwritten text over random erasing
          
          
 
