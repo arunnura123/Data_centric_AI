@@ -1,21 +1,20 @@
-# Data_centric_AI_Contest ( Innovative Submissions Track ) 
-We describe 4 innovative approaches towards Data Centric AI contest ( MNIST-ROMAN )
+# Data_centric_AI_Contest 
+We describe interesting approaches towards Data Centric AI contest ( MNIST-ROMAN )
 
-1.  "Crop" image first  and then "Augment" provides similar accuracy as "Augmenting" Images first and then "cropping" 
+1.  "Crop" image first  and then "Augment" provides similar accuracy as "Augmenting" Images first and then "cropping"  with benifits in space and faster Augmentation
+
 	- Compresses image size by 4-16x , Facilitates Faster Upload and reduces Colab Workspace
-        - Realize Faster image augmentation and Simplifies DataSet Search
+        - Realize Faster image augmentation 
+        - Simplifies DataSet Search for correction , deletion 
         - Achieves similar accuracy as that of traditional approach 
 
 
-2.  With Validation dataset unmodified , Discretization of Augmented training dataset improves decision boundary
+2.  We also observe the follow Approaches to help tweak training data distribution and improving validation accuracy  
+      
+         - Group pixels of similar intensity to same value ( Group by a factor of 2 or 3 reduces variance . However a large Group factor increases bias )
+         - Random shift ( increasing low intensity pixels while decrease high intensity pixels appears better than scaling image by a constant factor )
+         - Diagonal resets appear to better distort handwritten
+         
+         
 
-         - Group pixels of similar intensity to same value
-         - Faster convergence with training data 
-         - Reduces validation loss and emprical results suggest improved accuracy with Test Set
-
-3.  Distort HandWritten Images with Diagonal Erasing 
-
-4.  Emprical results with 
-	- Contrasting Distribution          ( Augment every image with a Flip )
-	- Mixup 			    ( https://arxiv.org/abs/1710.09412 )
 
