@@ -8,32 +8,99 @@ import glob
 
 m = ["i" , "ii" , "iii" , "iv", "v", "vi" , "vii", "viii" , "ix" ,"x" ]
 
-folder_name = "your folder of Training Dataset"
+folder_name = "train/"
+
+# Resize to Lower Resolution
+def resize_image(img):
+    img = cv2.resize(img, (32,32))
+    return img
+
+#Discretization improves decision boundary when number of groups is lesser ( < 3)
+# Group pixels of Similar Intensity
+def binning_image(img,groups):
+    img = img/groups
+    img = np.floor(img)
+    img = img*groups
+    return img
+
+#Clip by threshold and value
+# Reduce the intensity of pixels
+def clip_threshold_image(img,clip_threshold):
+    val = 255*clip_threshold/100
+    img[img > val] = val
+    return img
+
+def clip_by_value(img , clip_value):
+    img[img > clip_value] = clip_value
+    return img
+
+# Scale value to 255
+# Increase the intensity of low value pixels
+# First use clip and then scale
+# Addresses the issue with typical scale ( overflow beyond 255 )
+def scale_to_255(img):
+    mval = np.max(img)
+    scale = 255/mval
+    img = np.floor(img * scale)
+    return img
+
+#Non Linear scaling- Example
+def quantize(img):
+   index_list = [0,0,1,1,2,3,5,8,11,19,30,49,79,128,207,255]
+   img = np.floor(img/16)
+   for i in range(len(index_list)):
+        img[img == i] = index_list[i]
+   return img
+
+#Contrasting distribution
+#increase low intensity pixels
+# Decrease high intensity pixels
+def contrast_distribution(img):
+   a =  int(random.randint(0,50))
+   img[img < 127] += a
+   img[img > 127] -= a
+   return img
+
+#Flip Image
+def flip_distribution(img):
+   img = 255-img
+   return img
+
 for i in range(len(m)):
     print(folder_name + m[i])
     im1 = glob.glob(folder_name + m[i] + "/*.png")
     for f in range(len(im1)):
-        image1 = cv2.imread(im1[f], cv2.IMREAD_GRAYSCALE)
-        
-        # 1. Resize image first and Augment 
-        
-        im_r1 = cv2.resize(image1, (32,32))
-        
-        a =  int(random.randint(0,50))
-        
-        # 2. Binning , Group similar pixels
-        
-        a = a + (a%2)
-        
-        b = int(random.randint(0,1))
-        
-        # 3. Increase ligher intensity and Decrease Darker intensity
-        
-        im_r1[im_r1 < 127] += a
-        im_r1[im_r1 > 127] -= a
-        
-        # 4. Image Flip with probablity of 50%
-        
-        if b == 1:
-            im_r1 = ~im_r1
-        cv2.imwrite(os.path.join(im1[f]), im_r1)
+        image = cv2.imread(im1[f], cv2.IMREAD_GRAYSCALE)
+        im = resize_image(image)
+
+        rand_val =  int(random.randint(0,50))
+
+        if rand_val <= 5:
+            test_bin = binning_image(im,2)
+            res = test_bin
+        elif rand_val <=10:
+            test_bin = binning_image(im,1)
+            res = test_bin
+        elif rand_val <=15:
+            test_bin = binning_image(im,3)
+            res = test_bin
+        elif rand_val < 30:
+            test_rand =  int(random.randint(75,100))
+            test_clip = clip_threshold_image(im,test_rand)
+            test_scale = scale_to_255(test_clip)
+            if rand_val < 22:
+                res = test_clip
+            else :
+                res = test_scale
+        elif rand_val < 40:
+            test_qnt = quantize(im)
+            res = test_qnt
+        else :
+            test_cd = contrast_distribution(im)
+            res = test_cd
+
+        rand_val_n =  int(random.randint(0,2))
+
+        if rand_val_n == 1:
+           res = flip_distribution(res)
+        cv2.imwrite(os.path.join(im1[f]), res)
