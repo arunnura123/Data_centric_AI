@@ -22,7 +22,7 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
                 - Linear Mapping  - Group pixels of similar intensity to same value ( Group by a factor of 2 or 3 works well to 
            several of training datasets and experiments show reduction in variance . However a large Group factor degrades performance )
 	   
-	 	- Non Linear Mapping - Quantized Pixel values are mapped with non linear scale
+	 		- Non Linear Mapping - Quantized Pixel values are mapped with non linear scale
 	   
          - Random shift
                 Increasing low intensity pixels while decrease high intensity pixels with random factor appears to be a useful
@@ -30,4 +30,4 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
 	   
          - Clip First and then Scale 
                 Scaling image by scale factor results in overflow ( 255 ) resulting in poor Augmentation. Instead Clip by threshold or 
-	   value and then scale by 255/threshold as scale factor increases magnitude of low intensity pixels ( better Augmentation )
+	  	 value and then scale by 255/threshold as scale factor increases magnitude of low intensity pixels ( better Augmentation )
