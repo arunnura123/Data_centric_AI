@@ -9,7 +9,8 @@ Interesting approaches towards Data Centric AI contest ( MNIST-ROMAN )
 	
       Original Image Size 
   
-        ![image](https://user-images.githubusercontent.com/4832280/131283643-70ba5553-dc12-4a78-a93a-23673297ea98.png)
+     ![Original](https://user-images.githubusercontent.com/4832280/131283812-470058c7-90ff-46f9-ba3b-665aa994f694.PNG)
+
 
 
 
