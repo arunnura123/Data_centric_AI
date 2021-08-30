@@ -6,6 +6,8 @@ Interesting approaches towards Data Centric AI contest ( MNIST-ROMAN )
      10X compression in DataSet size
 
 	![image](https://user-images.githubusercontent.com/4832280/131283487-3a891061-6175-471b-9ac3-2122bed56db4.png)
+	
+      Original Image Size 
   
         ![image](https://user-images.githubusercontent.com/4832280/131283643-70ba5553-dc12-4a78-a93a-23673297ea98.png)
 
