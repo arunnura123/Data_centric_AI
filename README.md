@@ -30,7 +30,4 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
 	   
          - Clip First and then Scale 
                 Scaling image by scale factor results in overflow ( 255 ) resulting in poor Augmentation. Instead Clip by threshold 
-	   or value and then scale by [255/threshold]  as scale factor increases magnitude of low intensity 
-	   pixels ( better Augmentation )
-
-
+	   or value and then scale by 255/threshold as scale factor increases magnitude of low intensity pixels ( better Augmentation )
