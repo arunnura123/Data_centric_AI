@@ -35,4 +35,4 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
 		 
 3.  Observations 
 
-      - A combination of these techniques may result in better augmentation ( by varying distribution ) of training data  
+      - A combination of these techniques appear to  result in better augmentation ( by varying distribution ) of training data  
