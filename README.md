@@ -6,7 +6,7 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
         - 10X compression in DataSet size
         - Faster Augmentation with commodity devices
         - Avoids preprocessing overhead during training time
-        - Improves Ease of Dataset Manipulations ( Fixing Incorrect Label ) 
+        - Improves Ease of Dataset Manipulations ( Fixing Datasets ) 
 
 	![image](https://user-images.githubusercontent.com/4832280/131283487-3a891061-6175-471b-9ac3-2122bed56db4.png)
 	
