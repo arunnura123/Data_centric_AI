@@ -42,7 +42,7 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
 
 ![image](https://user-images.githubusercontent.com/4832280/131782644-05918ccf-f426-4b07-b137-bfee92d0e299.png)
 
-4.1     Challenges with Augmentation
+4.   Challenges with Augmentation
 
 	 Zoom - 8 is not clearly recognizable
 
@@ -52,20 +52,6 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
 
 ![scale_processedac21d4d0-ce5d-11eb-b317-38f9d35ea60f](https://user-images.githubusercontent.com/4832280/131783752-adbce163-7265-4da0-bffb-1759b208613d.png)
 
-
-4.2    Other Augmentations
-
-        Hessian
-
-![image](https://user-images.githubusercontent.com/4832280/131783833-12313fe2-4565-4581-bc5f-307899ce67b2.png)
-
-         Flip
-	 
-![Flip_processedb149af64-ce5d-11eb-b317-38f9d35ea60f](https://user-images.githubusercontent.com/4832280/131784047-54a5a30c-fe23-481c-b6ff-249f61fd0da8.png)
-
-        Gradient
-	
-![gradient_processedb13b027a-ce5d-11eb-b317-38f9d35ea60f](https://user-images.githubusercontent.com/4832280/131784095-5768f9a9-7eb4-40c7-afd1-d1947f3f4d18.png)
 
 
    
