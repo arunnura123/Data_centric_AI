@@ -38,7 +38,13 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
       - A combination of these techniques appear to  result in better augmentation ( by varying distribution ) of training data  
 
 
-Variations of Images
+=> Variations of Images with different pixel intensities
 
 ![image](https://user-images.githubusercontent.com/4832280/131782644-05918ccf-f426-4b07-b137-bfee92d0e299.png)
+
+=> Challenges with Augmentation
+
+Zoom - 8 is not clearly recognizable
+
+![image](https://user-images.githubusercontent.com/4832280/131782872-9daebe29-4292-4ed8-8bd9-6df1fb2a6b45.png)
 
