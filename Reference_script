@@ -10,7 +10,7 @@ m = ["i" , "ii" , "iii" , "iv", "v", "vi" , "vii", "viii" , "ix" ,"x" ]
 
 folder_name = "train/"
 
-# Resize to Lower Resolution
+# Resize to Lower Size
 def resize_image(img):
     img = cv2.resize(img, (32,32))
     return img
