@@ -1,7 +1,8 @@
 # Data_centric_AI_Contest 
 Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
 
-1.  "Crop" image first  and then "Augment" provides similar accuracy as "Augmenting" Images first and then "cropping" at training time 
+1.  Resize as an augmentation technique not only reduces image size in disk but reduces variance . 
+    Resize less than 8*8 leads to accuracy degrade - Random resize between 16*16 to 32*32 works better 
 
         - 10X compression in DataSet size
         - Faster Augmentation with commodity devices
@@ -15,7 +16,7 @@ Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
      ![Original](https://user-images.githubusercontent.com/4832280/131283812-470058c7-90ff-46f9-ba3b-665aa994f694.PNG)
 
 
-2.  Interesting Approaches to Augment Images 
+2.  Other Interesting Approaches to Augment Images 
       
          - Binning / Discretization 
        
