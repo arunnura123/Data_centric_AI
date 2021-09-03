@@ -1,12 +1,11 @@
 # Data_centric_AI_Contest 
 Interesting approaches towards Data Centric AI  ( MNIST-ROMAN )
 
-1.  Resize as an augmentation technique not only reduces image size in disk but reduces variance . 
-    Resize less than 8 * 8 leads to accuracy degrade - Random resize between 16 * 16 to 32 * 32 works better 
+1.  Resizing images ( cropping )  as an augmentation technique not only reduces image size in disk but reduces variance . 
+    Resize less than 8 * 8 leads to performance degrade - 
+    Random resize between 16 * 16 to 32 * 32 appears to work well  
 
-        - 10X compression in DataSet size ( reduces disk storage )
-        - Faster Augmentation with commodity devices
-        - Avoids preprocessing overhead during training time
+        - Atleast 10X compression in DataSet size ( reduces disk storage )
         - Improves Ease of Dataset Manipulations ( Fixing Datasets ) 
         - Reduces Variance
 
